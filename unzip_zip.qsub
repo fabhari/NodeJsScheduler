@@ -1,0 +1,12 @@
+#PBS -N ZIP_RE
+#PBS -o output.txt
+#PBS -e error.txt
+#PBS -l walltime=05:00:00
+#PBS -l vmem=10g
+#PBS -m bea 
+#PBS -M hs503@student.le.ac.uk
+#PBS -l nodes=2:ppn=16
+
+base_URL="/data/neuroretinal/ukb_master/OCT_RE/zip"
+
+node "/lustre/alice3/data/neuroretinal/ukb_master/hari_anlyst/scheduler.js"
